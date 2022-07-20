@@ -19,3 +19,9 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
 
+function getRandomSpecChars() {
+  var specChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  return specChars[Math.floor(Math.random() * specChars.length)];
+}
+
+console.log(getRandomSpecChars());
