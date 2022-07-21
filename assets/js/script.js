@@ -20,15 +20,33 @@ if (userLen < 8 || userLen > 128) {
   var lowerCase = confirm("Would you like your password to include lowercase characters?");
   // If user chooses yes, add all lowercase characters to userChoice
   if (lowerCase) {
-    userChoice += lowerChars;
+    // password/userChoice += lowerChars;
   };
   // Prompts user & ask if they would like uppercase characters in their password
   var upperCase = confirm("Would you like your password to include uppercase characters?");
   // If user chooses yes, add all uppercase characters to userChoice
   if (upperCase) {
-    userChoice += upperChars;
+    // password/userChoice += upperChars;
   };
-};
+  // Prompts user & ask if they would like special characters in their password
+  var special = confirm("Would you like your password to include special characters?");
+  // If user chooses yes, add all special characters to userChoice
+  if (specChars) {
+    // password/userChoice += specChars;
+  };
+  // Prompts user & ask if they would like numbers in their password
+  var numbers = confirm("Would you like your password to include numbers?");
+  // If user chooses yes, add all numbers to userChoice
+  if (numbers) {
+    // password/userChoice += numbers;
+  };
+  // If user chooses no, they will be prompted that one character type must be chosen
+  if (lowerCase === false && upperCase === false && specChars === false && numbers === false) {
+    alert("Please select at least one character type.");
+    generatePassword();
+      }
+}
+
 // Steps
 // . User will click "Generate Password"
 // . User will input length > 8 & < 128
