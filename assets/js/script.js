@@ -4,6 +4,7 @@ var lowerChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 var upperChars = ["A", "B", "C", "D", "E", "D", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var specChars = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", ",", "]", "^", "_", "`", "{", "|", "}", "~"];
 var numbChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var userChoice;
 
 
 function generatePassword() {
@@ -11,8 +12,9 @@ function generatePassword() {
   // TODO: add code to generate the password here
   // Asks for user input
 var userLen = prompt("How many characters would you like for your password? Please choose between 8 and 128 characters.");
-if (!userLen) {
-  alert("Please choose a value.")
+// If user does not input a number between 8 and 128
+if (userLen < 8 || userLen > 128) {
+  alert("Please enter a number between 8 and 128.")
 }
 // Steps
 // . User will click "Generate Password"
