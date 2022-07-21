@@ -2,13 +2,26 @@
 var generateBtn = document.querySelector('#generate');
 var lowerChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperChars = ["A", "B", "C", "D", "E", "D", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var specChars = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", ",", "]", "^", "_", "`", "{", "|", "}", "~",];
+var specChars = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", ",", "]", "^", "_", "`", "{", "|", "}", "~"];
+var numbChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
 
 function generatePassword() {
   var password = 'password';
   // TODO: add code to generate the password here
+  // Asks for user input
+var userLen = prompt("How many characters would you like for your password? Please choose between 8 and 128 characters.");
+if (!userLen) {
+  alert("Please choose a value.")
+}
+// Steps
+// . User will click "Generate Password"
+// . User will input length > 8 & < 128
+// . User will choose between uppercase, lowercase, special characters & numbers
+// . Validate that user has chosen at least one type for their password
+// . Generate password based on user choices
 
+// . Display password on the screen or through prompt
   return password;
 }
 
@@ -22,9 +35,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
-
-function getRandomLower() {
-  return lowerChars[Math.floor(Math.random() * lowerChars.length)]
-}
-
-console.log(getRandomLower());
