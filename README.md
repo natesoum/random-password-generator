@@ -1,47 +1,5 @@
 # random-password-generator
 
-// Psuedo-code
-
-
-// For the following functions this website was used as reference : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
-// Function for getting a random lowercase letter (ASCII Table)
-
-var password = userInput
-function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-
-// Function for getting a random uppercase letter (ASCII Table)
-function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-// Function for getting a random number (ASCII Table)
-function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
-function getRandomSpecChars() {
-  var specChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"; // Took out double quotes because function will cause an error if double quotes was included and string was wrapped with dou
-  return specChars[Math.floor(Math.random() * specChars.length)];
-}
-
-
-----------------
-
-DECLARE Variables
-string / password (the result)
-num    / passLength (user input)
-bool   / useUpper (user input)
-bool   / useLower (user input)
-bool   / useSpecial (user input)
-bool   / useNumber (user input)
-arr    / lowerChars (choices)
-arr    / upperChars (choices)
-arr    / specChars = "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~" (choices)
-arr    / numChars (choices)
-arr    / choices (array containing all characters chosen by the user) 
-
 # Objective 
 
 I am creating a password generator for users.
@@ -75,14 +33,33 @@ IF no, user's password will not contain any numbers
 USERS MUST choose at least one password input type
 THEN a password from the user desired choices will appear in either a alert or written on the page
 
-## What was your motivation?
+## Description
+
+What was your motivation?
 
 My motivation for this project is to create a random password generator for users to get a user-desired password! I also wanted to practice the skills I've learned recently to help them "stick" more. There's no better way to learn than to build stuff! I want to broaden my knowledge on my very beginner skills of JavaScript. This project was to help myself build a strong foundation to build upon as time goes on. I hope you enjoy my project and I will enjoy any feedback you have! 
 
-## Why did you build this project? 
+Why did you build this project? 
 
-## What problem does it solve?
+I built this project to get more comfortable with if/else statements & for loops. Also, I wanted to help myself understand the logic between it all as well. 
+This was a great challenge that had me puzzled for the longest time. This project was also very interesting to me as there were many things to think about. 
 
-## What did you learn?
+What problem does it solve?
 
-## What makes your project stand out?
+This solves a user's problem if they have a hard time brainstorming their own password. They can use this random password generator that is super simple and is all decided on user input! Enjoy!
+
+What did you learn?
+
+I learned the importance of psuedo code. I found how important it is to break down the problem piece by piece until you can't break it down any further no more. This is something I will definitely keep practicing and implement into every coding project, assignment, task & get better with everyday! I learned how to store different array's into a variable based on user input and randomize the array at a user desired length. I learned how vital it is to work with other developers! There are times where you just need another person to talk to & always looks for help. On this project, team work played a big part and communication will something I will be building on as well.
+Overall, I learned lots from this project! I hope to learn even more and get better with every project! 
+
+What makes your project stand out?
+
+My project stands out within the simplicity of the code. There is definitely more I can add to the code, but in the time given and with what I've learn so far. I believe my psuedo code compared to my actual code goes hand in hand with one another. 
+
+## Contributors
+
+I'd like to thank these developers for their contribution on this project! 
+Don't hesitate to visit their profile and view their work! 
+
+Freddy Kwak : https://github.com/fredkk22
