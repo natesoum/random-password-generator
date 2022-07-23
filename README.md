@@ -1,5 +1,9 @@
 # random-password-generator
 
+# Mock Up
+
+![mockup](./assets/images/mockup.jpg)
+
 # Objective 
 
 I am creating a password generator for users.
